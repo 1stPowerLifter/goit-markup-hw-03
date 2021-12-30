@@ -63,17 +63,19 @@ button {
   color: var(--brand-color);
 }
 /*---------------HEADER--------------*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-box {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 .nav {
   display: flex;
   align-items: center;
 }
 .nav-a {
-  padding: 32px 78px 32px 0;
+  padding: 24px 78px 24px 0;
 }
 .header-span {
   color: var(--third-color);
@@ -86,7 +88,7 @@ button {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  padding: 25px;
+  padding: 32px 25px;
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -101,10 +103,10 @@ button {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--second-color);
-  padding: 25px;
+  padding: 32px 25px;
 }
 .header-contact:last-child {
-  padding: 25px 0 25px 25px;
+  padding: 32px 0 32px 25px;
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -277,6 +279,9 @@ button {
   padding: 94px 0 50px 0;
   justify-content: center;
 }
+.search-item:not(:last-child) {
+  margin-right: 8px;
+}
 .search-btn {
   background: #f5f4fa;
   border-radius: 4px;
@@ -286,9 +291,6 @@ button {
   text-align: center;
   border: none;
   padding: 6px 22px;
-}
-.search-btn:not(:last-child) {
-  margin-right: 8px;
 }
 .search-btn:hover,
 .search-btn:focus {
